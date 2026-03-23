@@ -1,0 +1,43 @@
+{
+ "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+ "contentVersion": "1.0.0.0",
+ "parameters": {
+   "resourceName": {
+     "type": "string",
+     "defaultValue": "[format('openai-{0}', uniqueString(resourceGroup().id))]",
+     "metadata": {
+       "description": "Unique name for the Azure OpenAI resource."
+     }
+   },
+   "location": {
+     "type": "string",
+     "defaultValue": "[resourceGroup().location]",
+     "metadata": {
+       "description": "Location for the resource."
+     }
+   },
+   "sku": {
+     "type": "string",
+     "defaultValue": "S0",
+     "allowedValues": ["S0", "S1"],
+     "metadata": {
+       "description": "Pricing tier for the resource."
+     }
+   }
+ },
+ "resources": [
+   {
+     "type": "Microsoft.CognitiveServices/accounts",
+     "apiVersion": "2023-05-01",
+     "name": "[parameters('resourceName')]",
+     "location": "[parameters('location')]",
+     "sku": {
+       "name": "[parameters('sku')]"
+     },
+     "kind": "OpenAI",
+     "properties": {
+       "publicNetworkAccess": "Enabled"
+     }
+   }
+ ]
+}
