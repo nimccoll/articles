@@ -17,12 +17,6 @@ namespace CSharpChatCompletionConsole
             AzureOpenAIClient openAIClient = new AzureOpenAIClient(new Uri(openAIEndpoint), credential);
 
             ChatClient chatClient = openAIClient.GetChatClient(openAIDeploymentName);
-            ChatCompletionOptions chatCompletionOptions = new ChatCompletionOptions()
-            {
-                Temperature = 1f,
-                PresencePenalty = 0.0f,
-                TopP = 0.95f
-            };
 
             List<ChatMessage> chatMessages = new List<ChatMessage>();
             SystemChatMessage systemChatMessage = new SystemChatMessage("You are an AI assistant that helps people find information.");
@@ -38,7 +32,6 @@ namespace CSharpChatCompletionConsole
             {
                 UserChatMessage userChatMessage = new UserChatMessage(message);
                 chatMessages.Add(userChatMessage);
-                //var completionResponse = chatClient.CompleteChat(chatMessages, chatCompletionOptions);
                 var completionResponse = chatClient.CompleteChat(chatMessages);
 
                 if (completionResponse.Value.FinishReason == ChatFinishReason.ContentFilter)
