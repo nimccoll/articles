@@ -2,7 +2,7 @@
   "profiles": {
     "CSharpSimpleRAGConsole": {
       "commandName": "Project",
-      "commandLineArgs": "C:\\Data\\Documents\\Personal\\Articles\\media-inventory.csv"
+      "commandLineArgs": "C:\\Data\\media-inventory.csv"
     }
   }
 }
