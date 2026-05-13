@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37216.2
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpSimpleRAGConsole", "CSharpSimpleRAGConsole\CSharpSimpleRAGConsole.csproj", "{3198D94F-F642-00CB-AFB0-A15E6D644036}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpRAGKeywordSearch", "CSharpRAGKeywordSearch\CSharpRAGKeywordSearch.csproj", "{A1E1F52A-7BF3-DFDD-0AA7-C9F3E93FF7A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3198D94F-F642-00CB-AFB0-A15E6D644036}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3198D94F-F642-00CB-AFB0-A15E6D644036}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3198D94F-F642-00CB-AFB0-A15E6D644036}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3198D94F-F642-00CB-AFB0-A15E6D644036}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1E1F52A-7BF3-DFDD-0AA7-C9F3E93FF7A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1E1F52A-7BF3-DFDD-0AA7-C9F3E93FF7A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1E1F52A-7BF3-DFDD-0AA7-C9F3E93FF7A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1E1F52A-7BF3-DFDD-0AA7-C9F3E93FF7A0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {58C4F215-684E-4EB0-AE31-2CCC55899C4B}
+	EndGlobalSection
+EndGlobal
